@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.net-funds {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.net-funds h2 {
+  margin: 0;
+  color: #007bff;
+}
+
+.net-funds p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.filters input,
+.filters button {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button#applyFilters {
+  background: #007bff;
+  color: white;
+}
+
+button#resetFilters {
+  background: #dc3545;
+  color: white;
+}
+
+/* ✅ Table Scrollable on Small Screens */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; /* Prevents table from shrinking */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* ✅ Responsive for Mobile Screens */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .net-funds {
+    width: 80%;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters input,
+  .filters button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
