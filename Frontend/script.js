@@ -113,6 +113,14 @@ $(document).ready(function () {
 
     // ✅ Fetch Expenses with Filters
     function fetchExpenses(filters = {}) {
+        // Set default filter to current month and year if no monthYear filter is provided
+        if (!filters.monthYear) {
+            const currentDate = new Date();
+            const currentYear = currentDate.getFullYear();
+            const currentMonth = String(currentDate.getMonth() + 1).padStart(2, "0");
+            filters.monthYear = `${currentYear}-${currentMonth}`;
+        }
+
         let query = $.param(filters);
         let url = `http://localhost:5001/filter-expenses?${query}`;
 

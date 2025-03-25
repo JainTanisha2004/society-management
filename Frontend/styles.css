@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #e3f2fd;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
   text-align: center;
 }
 
@@ -98,7 +98,7 @@ th {
 }
 
 .edit-btn {
-  background: #ffc107;
+  background: #eddeb2;
   color: black;
   border: none;
   padding: 5px 10px;
